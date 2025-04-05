@@ -1,0 +1,10 @@
+<script>
+  const pathnames = new URL(
+    "https://richardpv2.github.io/test1/Projects/TEST/"
+  ).pathname
+    .split("/")
+    .filter((e) => e !== "test1" && e !== "");
+  window.location.replace(
+    "https://richardpv2.github.io/test1/?redirect=" + pathnames[0]
+  );
+</script>
