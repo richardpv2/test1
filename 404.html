@@ -1,7 +1,0 @@
-<script>
-  const pathname = new URL(window.location.href).pathname;
-  const redirect = pathname.split("/").filter((e) => e !== "" && e !== "test1");
-  window.location.replace(
-    "https://richardpv2.github.io/test1/?redirect=" + redirect[0]
-  );
-</script>
